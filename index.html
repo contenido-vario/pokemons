@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    a {
+      display: block;
+      color: #dbeafe;
+      padding-bottom: 0.5px;
+    }
+    a:hover {color: #ff8400ac;}
+  </style>
+  <title>API Pokemon</title>
+</head>
+<body class="flex flex-col h-screen bg-slate-100 overflow-hidden">
+  <!-- Para que el contenedor ocupe todo el alto de la pantalla,
+  el body debe tener una estructura flex vertical 
+  y el container debe "crecer" con flex-1. -->
+  <div id="container" class="flex flex-col flex-1 w-full  mx-auto pb-2">
+    <header class="w-full py-2 bg-amber-500 text-white">
+      <h1 class="text-3xl ml-4 font-extrabold tracking-wide drop-shadow-[0_2px_4px_rgba(146,64,14,0.5)]">PokéAPI</h1>
+    </header>
+    <div id="wrapper" class="flex flex-1 w-full">
+      <aside id="lista" class="h-full w-3/12 flex flex-col justify-between text-sm bg-slate-800 text-white">
+        <h3 id="enc-lista" class="font-bold text-center text-base pt-0.5 md:pt-2" >Pokémons</h3>
+        <div id="lista-pokemons" class="h-px flex-1 pt-0.5 pb-2 px-0.5 overflow-y-auto text-xs md:pl-6">
+            <a>01. hello</a>
+            <a>02. hello</a>
+            <a>03. hello</a>
+            <a>04. hello</a>
+            <a>05. hello</a>
+            <a>06. hello</a>
+            <a>07. hello</a>
+            <a>08. hello</a>
+            <a>09. hello</a>
+            <a>10. hello</a>
+            <a>11. hello</a>
+            <a>12. hello</a>
+            <a>13. hello</a>
+            <a>14. hello</a>
+            <a>15. hello</a>
+            <a>16. hello</a>
+            <a>17. hello</a>
+            <a>18. hello</a>
+            <a>19. hello</a>
+            <a>20. hello</a>
+        </div>
+        <nav class="flex justify-evenly items-center border-t border-slate-200 pb-2 shrink-0">
+          <button class="py-1" type="button" id="anterior">
+            <img class="w-6" title="anterior" src="previous.svg" alt="anterior">
+          </button>
+          <p class="text-xs mx-1">más...</p>
+          <button class="py-1" type="button" id="siguiente">
+            <img class="w-6" title="siguiente" src="next.svg" alt="siguiente">
+          </button>
+        </nav>
+      </aside>
+      <main id="pokemon" class="w-9/12 pt-0.5 pb-2 px-0.5 overflow-y-auto">
+        <h2 class="text-xl text-center text-amber-500">Datos del Pokémon</h2>
+      </main>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
